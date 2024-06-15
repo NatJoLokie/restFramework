@@ -11,7 +11,8 @@ public class UserEndPoints {
         Response response = given()
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .body(payload).log().all()
+                .body(payload)
+                .log().uri()
                 .when()
                 .post(Urls.POST_URL);
 
@@ -22,7 +23,7 @@ public class UserEndPoints {
     public static Response readUser(String user_Name) {
         Response response = given()
                 .pathParam("userName", user_Name)
-                .log().all()
+                .log().uri()
                 .when()
                 .get(Urls.GET_URL);
 
@@ -36,7 +37,7 @@ public class UserEndPoints {
                 .accept(ContentType.JSON)
                 .pathParam("userName", user_Name)
                 .body(payload)
-                .log().all()
+                .log().uri()
                 .when()
                 .put(Urls.UPDATE_URL);
 
@@ -48,7 +49,7 @@ public class UserEndPoints {
     public static Response deleteUser(String user_Name) {
         Response response = given()
                 .pathParam("userName", user_Name)
-                .log().all()
+                .log().uri()
                 .when()
                 .delete(Urls.DELETE_URL);
 
