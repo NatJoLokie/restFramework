@@ -5,10 +5,10 @@
     <groupId>org.example</groupId>
     <artifactId>restFrameWork</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+
 
     <name>restFrameWork</name>
-    <url>http://maven.apache.org</url>
+<!--    <url>http://maven.apache.org</url>-->
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -24,26 +24,26 @@
 
     </properties>
 
-    <dependencies>
-        <dependency>
+     <dependencies>
+<!--        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>${rest-assured.version}</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
             <version>${testng.version}</version>
-            <scope>test</scope>
+<!--            <scope>test</scope>-->
         </dependency>
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
@@ -56,12 +56,12 @@
             <artifactId>cucumber-java</artifactId>
             <version>${cucumber-java.version}</version>
         </dependency>
-        <dependency>
+ <!--       <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
             <version>RELEASE</version>
             <scope>test</scope>
-        </dependency>
+        </dependency>-->
 
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
@@ -123,6 +123,5 @@
             <version>2.23.1</version>
         </dependency>
 
-
-    </dependencies>
+     </dependencies>
 </project>

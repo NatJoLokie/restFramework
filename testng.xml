@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
+<suite name="All Test Suite" verbose="1">
     <listeners>
         <listener class-name="api.utilities.ExtentReportManager"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="All Test Suite">
+    <test name="restFrameWork">
         <classes>
 <!--            <class name="api.test.DataDrivenTest"/>-->
-            <class name="api.test.UserTest"/>
+<!--            <class name="api.test.UserTest"/>-->
+            <class name="api.test.UserTestProp"/>
         </classes>
     </test>
 </suite>
